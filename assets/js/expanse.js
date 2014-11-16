@@ -38,11 +38,11 @@ $(document).ready(function(){
   
   // keep showing box if hover on box
   $hover.hover(function(){
-    if(!$bio.hasClass('doHover'))
-      $bio.addClass('doHover');
+      if($bio.hasClass('doHover'))
+          $bio.removeClass('doHover');
   }, function(){
-    if($bio.hasClass('doHover'))
-      $bio.removeClass('doHover');
+      if(!$bio.hasClass('doHover'))
+          $bio.addClass('doHover');
   });
   
   // fade out $bg on scroll down
