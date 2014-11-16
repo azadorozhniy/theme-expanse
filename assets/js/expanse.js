@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
   
   // keep showing box if hover on box
-  $hover.hoverIntent(function(){
+  $hover.mouseenter(function(){
     if(!$bio.hasClass('doHover'))
       $bio.addClass('doHover');
   }, function(){
