@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
   
   // show box on hover
-  $avatar.hoverIntent(function(){
+  $avatar.hover(function(){
     console.log('hovering on avatar');
     $bio.addClass('doHover');
   }, function(){
@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
   
   // keep showing box if hover on box
-  $hover.mouseenter(function(){
+  $hover.hover(function(){
     if(!$bio.hasClass('doHover'))
       $bio.addClass('doHover');
   }, function(){
