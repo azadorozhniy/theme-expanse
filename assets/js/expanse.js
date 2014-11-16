@@ -5,8 +5,6 @@ $(document).ready(function(){
   var $header = $('header');
   var $bg = $('.bg');
   var $spinner = $('.spinner');
-  var $bio = $('.bio');  
-  var $avatar = $('.user-avatar');
   var $hover = $('.user-avatar-hover');
   var isHome = (!$('body').hasClass('short-header'))? true : false;  
 
@@ -26,23 +24,6 @@ $(document).ready(function(){
         $bg.css({ backgroundImage: "url('"+cover+"')" });
         $spinner.hide();
       }
-  });
-  
-  // show box on hover
-  $avatar.hover(function(){
-    console.log('hovering on avatar');
-    $bio.addClass('doHover');
-  }, function(){
-    $bio.removeClass('doHover');
-  });
-  
-  // keep showing box if hover on box
-  $hover.hover(function(){
-      if($bio.hasClass('doHover'))
-          $bio.removeClass('doHover');
-  }, function(){
-      if(!$bio.hasClass('doHover'))
-          $bio.addClass('doHover');
   });
   
   // fade out $bg on scroll down
