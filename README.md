@@ -16,6 +16,7 @@ Run the following command in Terminal to install Gulp for LESS preprocessing.
 npm install
 ```
 
+
 ### 2) Run Gulp
 
 Run gulp to make sure all CSS and JavaScript files are the latest versions.
